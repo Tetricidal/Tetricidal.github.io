@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<head>
+    <title>OldWebGames :: Motherload</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/project.css">
+    <script src="../scripts/theme-switcher.js"></script>
+    <script src="../ruffle/ruffle.js"></script>
+</head>
+
+<html lang="en-US">
+    <body onload="startupTheme()">
+        <div id="wrapper">
+            <header>
+                <a href="../index.html">
+                    <h1>OldWebGames</h1>
+                    <div id="logo" role="img" alt="old web games logo, glowing globe constructed of puzzle pieces"></div>
+                </a>
+                <button id="themeSwap" type="button" onclick="lightSwitch()"></button>  
+            </header>
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>All Titles</li></a>
+                    <a href="../categories/top-rated.html"><li>Top Rated</li></a>
+                    <a href="../categories/action.html"><li>Action</li></a>
+                    <a href="../categories/rpg.html"><li>RPG</li></a>
+                </ul>
+            </nav>
+            <main>
+                <a href="#game"><h2>Motherload</h2></a>
+                <div id="game"></div>
+                <div class="swf embed-responsive embed-responsive-ratio" role="img" alt="loading">
+                    <embed class="embed-responsive-item" src="../games/swf/motherload.swf" type="application/x-shockwave-flash" title="Motherload">
+                </div>
+                <div class="containment">
+                    <h3>About this game</h3>
+                    <p> 
+                        You're a resource miner on mars. 
+                        Equipped with a drill and some fuel, you try to strike it rich by delving ever deeper into the martian soils.
+                        Little did you know there was more than just ore waiting to be uncovered...
+                    </p>
+                    <h3>Controls</h3>
+                    <p>
+                        ASDW or arrow keys to move. Left click to interact or move. The game can be played exclusively with the mouse's left click.
+                        <br>
+                        Right click to see option for fullscreen. 
+                    </p>
+                </div>
+                <form action="#" class="containment"> 
+                    <div class=form-elements>
+                        <label for="alias"><p class="alias">Alias: </p><input type="text" name="alias" id="alias"></label>
+                        <label for="time-played"><p class="time-played">Time Played: </p><input type="number" placeholder="Minutes" min="0"></label>
+                        <label for="rating" class="rating-container">
+                            <p class="rating">Rating: </p>
+                            <ul>
+                                <label class="rating-btn positive" for="positive"><p>Positive</p><input type="radio" name="rating" id="positive" value="1" required></label>
+                                <label class="rating-btn neutral" for="neutral"><p>Neutral</p><input type="radio" name="rating" id="neutral" value="0" required></label>
+                                <label class="rating-btn negative" for="negative"><p>Negative</p><input type="radio" name="rating" id="negative" value="-1" required></label>
+                            </ul>
+                        </label>
+                        <label for="review"><p class="review">Review: </p><textarea placeholder="Thoughts, feelings, considerations." name="review" id="review"></textarea></label>
+                        <label for=""><p></p><input type="submit" value="Submit"></label>
+                    </div>
+                </form>
+                <p class="containment">
+                    True commenting/rating system requires server-side language knowledge to complete.
+                    <br>
+                    The form above will not function as intended.
+                </p>
+            </main>
+            <footer>
+                <p>
+                    Copyright &copy 2021 OldWebGames
+                    <br>
+                    <a href="mailto:sgelmore@fhsu.edu">shakaelmore@oldwebgames.com</a>
+                </p>
+            </footer>
+        </div>
+    </body>
+</html>
